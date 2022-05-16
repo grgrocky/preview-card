@@ -29,10 +29,23 @@ body {
 
 }
 
+nav {  /* used cyan color to show when the image is hovered */
+    width: 325px;
+    height: 325px;
+    margin-top: 1.5rem;
+    border-radius: 0.7rem;
+    background-color: var(--cyan);
+}
+
 #logo {
     width: 325px;
-    margin-top: 1.5rem;
     border-radius: 0.5rem;
+}
+
+#logo:hover{
+    background-color: var(--cyan);
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 nav {
@@ -44,6 +57,11 @@ nav {
     font-weight: 600;
     font-size: 1.6rem;
     margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+#title h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
 }
 
 #title p {
@@ -99,30 +117,28 @@ nav {
     display: flex;
     flex-direction: row;
     margin: 0.5rem auto 1rem 1.5rem ;
-}
-
-#circle {
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    align-self: center;
-    border-radius: 50%;
-    background-color: white;
+    align-items: center;
 }
 
 #creator-name img {
-    width: 95%;
-    height: auto;
-   margin-top: 1px;
+   border: 1px solid hsl(0,0%,100%);
+   border-radius: 50%;
+   width: 40px;
+   height: auto;
 }
 
 #creator-name p {
-    margin-left: 10px;
+    margin-left: 16px;
     color: var(--softblue);
 }
 
 span {
     color: var(--white);
+}
+
+span:hover {
+    color: var(--cyan);
+    cursor: pointer;
 }
 
 .attribution { font-size: 11px; }
