@@ -35,9 +35,17 @@ nav {  /* used cyan color to show when the image is hovered */
     margin-top: 1.5rem;
     border-radius: 0.7rem;
     background-color: var(--cyan);
+    position: relative;
 }
 
-#logo {
+#eye {    
+    position: absolute;
+    top: 41%;
+    left: 43%;
+    opacity: 0;
+}
+
+#logo {    
     width: 325px;
     border-radius: 0.5rem;
 }
@@ -46,6 +54,10 @@ nav {  /* used cyan color to show when the image is hovered */
     background-color: var(--cyan);
     cursor: pointer;
     opacity: 0.5;
+}
+
+nav:hover > #eye {
+    opacity: 1;
 }
 
 nav {
